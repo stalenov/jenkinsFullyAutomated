@@ -20,6 +20,7 @@ pipeline {
 	}
 	stage('Deploy to production'){
 	    steps {
+		echo 'Deploy to prod start'
 		timeout(time:5, unit:'DAYS'){
 		    input message:'Approve production deployment?'
 		}
