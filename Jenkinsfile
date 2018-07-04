@@ -20,8 +20,7 @@ pipeline {
 
         stage ('Deploy to Production'){
             steps{
-
-                build job: 'Deploy-to-Prod'
+		echo 'bla-bla-bla'
             }
             post {
                 success {
